@@ -1,5 +1,5 @@
 # dropbear
-dropbear编译成huawei E8372h-155 及android可用的命令
+dropbear最新版本编译成android可用的命令
 
 下载源码  
 wget https://matt.ucc.asn.au/dropbear/dropbear-2019.78.tar.bz2
