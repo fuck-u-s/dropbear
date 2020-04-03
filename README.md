@@ -3,9 +3,12 @@ dropbear编译成huawei E8372h-155 及android可用的命令
 
 下载源码  
 wget https://matt.ucc.asn.au/dropbear/dropbear-2019.78.tar.bz2
+
 解压
 tar   -jxvf    dropbear-2019.78.tar.bz2
+
 cd dropbear-2019.78/
+
 
 编译命令参考 https://github.com/scue/android_dropbear_sshd
 
