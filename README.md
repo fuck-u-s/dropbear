@@ -16,6 +16,7 @@ cd dropbear-2019.78/
 sudo apt-get install gcc-arm-linux-gnueabi
 
 配置,注意再后面添加静态编译配置
+
 ./configure --host=arm-linux-eabi \
     --disable-zlib \
     --disable-largefile \
