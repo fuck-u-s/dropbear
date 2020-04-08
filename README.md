@@ -16,25 +16,12 @@ cd dropbear-2019.78/
 sudo apt-get install gcc-arm-linux-gnueabi
 
 配置,注意再后面添加静态编译配置
-
-./configure --host=arm-linux-eabi \
-    --disable-zlib \
-    --disable-largefile \
-    --disable-loginfunc \
-    --disable-shadow \
-    --disable-utmp \
-    --disable-utmpx \
-    --disable-wtmp \
-    --disable-wtmpx \
-    --disable-pututline \
-    --disable-pututxline \
-    --disable-lastlog \
-    CC=arm-linux-gnueabi-gcc \
-    STRIP=arm-linux-gnueabi-strip LDFLAGS=-static
+./configure --host=arm-linux-eabi --disable-zlib --disable-largefile --disable-loginfunc --disable-shadow --disable-utmp --disable-utmpx --disable-wtmp --disable-wtmpx --disable-pututline --disable-pututxline --disable-lastlog CC=arm-linux-gnueabi-gcc STRIP=arm-linux-gnueabi-strip LDFLAGS=-static
     
 编译
 
 export STATIC=1 MULTI=1 CC=arm-linux-gnueabi-gcc SCPPROGRESS=0 PROGRAMS="dropbear dropbearkey dbclient ssh"
+
 make clean && make -j4 strip
 
 最后一步
